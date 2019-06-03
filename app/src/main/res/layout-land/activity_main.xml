@@ -6,13 +6,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@drawable/inicio2"
-        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+    android:layout_gravity="center"
+    android:gravity="center"
         tools:context=".MainActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:elevation="6dp"
+
+        android:layout_margin="50dp"
+        android:background="@color/colorSecondary"
+        >
+    <TextView
+        android:textSize="20dp"
+        android:text="Basket Score Manager"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:elevation="42dp"
+        android:layout_height="wrap_content" />
     <TextView
         android:text="Seleccione una opcion: "
         android:textSize="20dp"
-        android:textColor="#FFF"
+        android:textColor="#000000"
+
         android:layout_marginBottom="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -21,15 +42,20 @@
             android:id="@+id/btn_jugar"
             android:layout_gravity="center"
             android:layout_width="200dp"
-            android:background="#FFF"
+            android:background="#f5f5f5"
+        android:elevation="8dp"
             android:layout_height="wrap_content"
             android:text="Jugar"/>
     <Button
         android:layout_marginTop="10dp"
             android:id="@+id/btn_ver_Partidos"
             android:text="Ver partidos"
+            android:elevation="8dp"
             android:layout_width="200dp"
-        android:background="#FFF"
-            android:layout_height="wrap_content" />
+            android:background="#f5f5f5"
+            android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
 
 </LinearLayout>

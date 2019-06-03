@@ -5,15 +5,25 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/nombres3"
+        android:background="@color/colorPrimaryDark"
     android:gravity="center"
         android:orientation="vertical"
         tools:context=".NombreEquipos">
+    <LinearLayout
+        android:background="@color/colorSecondary"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:elevation="6dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
     <TextView
         android:layout_marginVertical="20dp"
         android:text="Nombre de los equipos participantes"
         android:layout_width="match_parent"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="20sp"
@@ -30,13 +40,13 @@
             android:text="Equipo A: "
             android:layout_weight="1"
             android:textSize="20dp"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/et_equipoA"
             android:layout_weight="100"
-            android:background="#fff"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -53,13 +63,13 @@
             android:text="Equipo B: "
             android:textSize="20dp"
             android:layout_weight="1"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/et_equipoB"
             android:layout_weight="100"
-            android:background="#fff"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -67,12 +77,13 @@
     </LinearLayout>
     <Button
         android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
         android:id="@+id/btn_Comenzar"
         android:text="Comenzar"
-        android:background="#fff"
-        android:layout_width="wrap_content"
+        android:background="#f5f5f5"
+        android:elevation="8dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content" />
+    </LinearLayout>
 
 </LinearLayout>
